@@ -1,4 +1,4 @@
-# Vlur (or Blur on Vulkan)
+# Vlur (or Blur on Vulkan in Jetpack Compose)
 
 ## TODO 
 
