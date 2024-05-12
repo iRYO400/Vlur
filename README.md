@@ -22,7 +22,7 @@ _Soon_
 
 _Soon_
 
-## Helpful links
+## Links
 
 - https://github.com/android/renderscript-samples
 
