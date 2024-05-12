@@ -20,5 +20,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Vlur"
-include(":app")
+include(":sample")
 include(":vlur")
