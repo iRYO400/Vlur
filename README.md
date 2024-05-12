@@ -1,8 +1,6 @@
 # Vlur (or Blur on Vulkan in Jetpack Compose)
 
-## Sample Preview
-
-<img src="./media/vlur_preview_480.webp" />
+<img src="./media/vlur_preview_480.webp" width="80%"/>
 
 ### Prerequisites
 
