@@ -2,9 +2,7 @@
 
 ## Sample Preview
 
-<p align="center">
-    <img src="./media/vlur_preview_480.webp" align="left" />
-</p>
+<img src="./media/vlur_preview_480.webp" />
 
 ### Prerequisites
 
