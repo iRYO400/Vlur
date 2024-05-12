@@ -6,7 +6,7 @@
 
 - Android API 28+
 - HardwareAcceleration is a must
-- NDK and CMake must be installed. Current versions is written in (./gradle/libs.versions.toml)
+- NDK and CMake must be installed. Current versions is written in [libs.versions.toml](./gradle/libs.versions.toml) 
 - ...
 
 _Soon_
