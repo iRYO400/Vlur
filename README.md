@@ -1,6 +1,34 @@
 # Vlur (or Blur on Vulkan in Jetpack Compose)
 
-## TODO 
+## Sample Preview
+
+<p align="center">
+    <img src="./media/vlur_preview_480.webp" align="left" />
+</p>
+
+### Prerequisites
+
+- Android API 28+
+- HardwareAcceleration is a must
+- NDK and CMake must be installed. Current versions is written in (./gradle/libs.versions.toml)
+- ...
+
+_Soon_
+
+### Import to project
+
+_Soon_
+
+### Known issues
+
+- It doesn't run on emulator
+- ...
+
+_Soon_
+
+## Helpful links
+
+- https://github.com/android/renderscript-samples
 
 ## License
 

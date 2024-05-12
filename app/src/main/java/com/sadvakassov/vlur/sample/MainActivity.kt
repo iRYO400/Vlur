@@ -16,9 +16,12 @@ class MainActivity : ComponentActivity() {
         System.loadLibrary("vlur")
 
         enableEdgeToEdge()
+
         setContent {
             VlurTheme {
-                MainView()
+                MainView {
+                    onBackPressedDispatcher.onBackPressed()
+                }
             }
         }
     }
