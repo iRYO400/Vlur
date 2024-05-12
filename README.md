@@ -1,4 +1,6 @@
-# Vlur (or Blur on Vulkan in Jetpack Compose)
+![Build status](https://github.com/iRYO400/vlur/actions/workflows/build.yml/badge.svg)
+
+## Vlur (or Blur on Vulkan in Jetpack Compose)
 
 <img src="./media/vlur_preview_480.webp" />
 
