@@ -1,5 +1,5 @@
 [versions]
-libVersion = "1.0.0"
+libVersion = "0.4.3"
 agp = "8.3.2"
 android-compileSdk = "34"
 android-minSdk = "28"
@@ -7,6 +7,7 @@ android-targetSdk = "34"
 cmake = "3.22.1"
 kotlin = "1.9.23"
 ndk = "25.2.9519653"
+mavenpub = "0.28.0"
 
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -56,4 +57,6 @@ compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview"
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
+mavenpublish = { id = "com.vanniktech.maven.publish", version.ref = "mavenpub" }
+
 

@@ -4,27 +4,7 @@ import org.jetbrains.kotlin.fir.expressions.builder.buildArgumentList
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    `maven-publish`
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            groupId = "com.sadvakassov"
-            artifactId = "vlur"
-            version = libs.versions.libVersion.get()
-
-            afterEvaluate {
-                from(components["release"])
-            }
-        }
-    }
-    repositories {
-        maven {
-            name = "myrepo"
-            url = uri("${project.buildDir}/repo")
-        }
-    }
+    alias(libs.plugins.mavenpublish)
 }
 
 android {
@@ -47,12 +27,6 @@ android {
                 UnstrippedLibs.add("-DANDROID_TOOLCHAIN=clang")
                 UnstrippedLibs.add("-DANDROID_STL=c++_static")
             }
-        }
-    }
-
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
         }
     }
 
