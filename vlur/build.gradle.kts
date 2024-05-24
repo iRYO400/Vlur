@@ -75,9 +75,10 @@ dependencies {
 
 nmcp {
     publishAllPublications {
-        username = findProperty("SONATYPE_USERNAME") as String
-        password = findProperty("SONATYPE_PASSWORD") as String
-        // publish manually from the portal
+        val keyUsername = "SONATYPE_USERNAME"
+        val keyPassword = "SONATYPE_PASSWORD"
+        username = (findProperty(keyUsername) as? String) ?: System.getenv(keyUsername)
+        password = (findProperty(keyPassword) as? String) ?: System.getenv(keyPassword)
         publicationType = "USER_MANAGED"
     }
 }
