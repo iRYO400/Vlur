@@ -8,6 +8,9 @@ pluginManagement {
             }
         }
         mavenCentral()
+//        maven {
+//            url = uri("../nmcp/repo")
+//        }
         gradlePluginPortal()
     }
 }
