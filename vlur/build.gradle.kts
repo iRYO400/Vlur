@@ -12,6 +12,7 @@ android {
     namespace = "com.sadvakassov.vlur"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     ndkVersion = libs.versions.ndk.get()
+    version = findProperty("VERSION_NAME") as String
 
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -77,8 +78,9 @@ nmcp {
     publishAllPublications {
         val keyUsername = "SONATYPE_USERNAME"
         val keyPassword = "SONATYPE_PASSWORD"
-        username = (findProperty(keyUsername) as? String) ?: System.getenv(keyUsername)
-        password = (findProperty(keyPassword) as? String) ?: System.getenv(keyPassword)
+        username = findProperty(keyUsername)?.toString() ?: System.getenv(keyUsername)
+        password = findProperty(keyPassword)?.toString() ?: System.getenv(keyPassword)
+
         publicationType = "USER_MANAGED"
     }
 }
