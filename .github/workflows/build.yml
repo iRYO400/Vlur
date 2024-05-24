@@ -29,9 +29,11 @@ jobs:
       - name: Build samples
         run: ./gradlew :sample:assemble
 
-  Upload to Maven:
+  Upload2Maven:
     environment:
       name: "MavenCentral"
+
+    needs: Build
 
     runs-on: ubuntu-latest
     timeout-minutes: 30
