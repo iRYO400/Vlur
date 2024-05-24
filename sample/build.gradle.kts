@@ -48,6 +48,7 @@ android {
 
 dependencies {
     implementation(project(":vlur"))
+//    implementation("com.sadvakassov:vlur:0.2.3")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

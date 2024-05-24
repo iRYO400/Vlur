@@ -4,7 +4,8 @@ import org.jetbrains.kotlin.fir.expressions.builder.buildArgumentList
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.mavenpublish)
+    alias(libs.plugins.mavenPublish)
+    alias(libs.plugins.nmcp)
 }
 
 android {
@@ -70,4 +71,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+nmcp {
+    publishAllPublications {
+        username = findProperty("SONATYPE_USERNAME") as String
+        password = findProperty("SONATYPE_PASSWORD") as String
+        // publish manually from the portal
+        publicationType = "USER_MANAGED"
+    }
 }

@@ -1,5 +1,4 @@
 [versions]
-libVersion = "0.4.3"
 agp = "8.3.2"
 android-compileSdk = "34"
 android-minSdk = "28"
@@ -8,6 +7,7 @@ cmake = "3.22.1"
 kotlin = "1.9.23"
 ndk = "25.2.9519653"
 mavenpub = "0.28.0"
+nmcp = "0.0.7"
 
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -57,6 +57,5 @@ compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview"
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-mavenpublish = { id = "com.vanniktech.maven.publish", version.ref = "mavenpub" }
-
-
+mavenPublish = { id = "com.vanniktech.maven.publish", version.ref = "mavenpub" }
+nmcp = { id = "com.gradleup.nmcp", version.ref = "nmcp" }
