@@ -78,8 +78,6 @@ nmcp {
     publishAllPublications {
         val keyUsername = "SONATYPE_USERNAME"
         val keyPassword = "SONATYPE_PASSWORD"
-        println("the username is ${findProperty(keyUsername)} or ${System.getenv(keyUsername)}")
-        println("the password is ${findProperty(keyPassword)} or ${System.getenv(keyPassword)}")
         username = findProperty(keyUsername)?.toString() ?: System.getenv(keyUsername)
         password = findProperty(keyPassword)?.toString() ?: System.getenv(keyPassword)
 
