@@ -52,3 +52,6 @@ jobs:
 
       - name: Upload library
         run: ./gradlew :vlur:publishAllPublicationsToCentralPortal
+        env:
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.SIGNING_IN_MEMORY_KEY }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_IN_MEMORY_KEY_PASSWORD }}
