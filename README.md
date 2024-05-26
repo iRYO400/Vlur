@@ -2,6 +2,8 @@
 
 ## Vlur (or Blur on Vulkan in Jetpack Compose)
 
+Blur modifier for Jetpack Compose based on Vulkan
+
 <img src="./media/vlur_preview_480.webp" />
 
 ### Prerequisites
@@ -10,6 +12,7 @@
 - HardwareAcceleration is a must
 - NDK and CMake must be installed. Current versions is written in [libs.versions.toml](./gradle/libs.versions.toml)
 
+
 ### Import to project
 
 Import it like any other library, check [build.gradle.kts of Sample project](./sample/build.gradle.kts)
@@ -17,6 +20,7 @@ Import it like any other library, check [build.gradle.kts of Sample project](./s
 ```kotlin
     implementation("com.sadvakassov:vlur:0.2.4")
 ```
+
 
 ### Example of usage 
 
@@ -39,6 +43,7 @@ Check [Sample project](./sample/src/main/java/com/sadvakassov/vlur/sample/MainVi
         contentDescription = null
     )
 ```
+
 
 ### Known issues
 
