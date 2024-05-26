@@ -8,24 +8,46 @@
 
 - Android API 28+
 - HardwareAcceleration is a must
-- NDK and CMake must be installed. Current versions is written in [libs.versions.toml](./gradle/libs.versions.toml) 
-- ...
-
-_Soon_
+- NDK and CMake must be installed. Current versions is written in [libs.versions.toml](./gradle/libs.versions.toml)
 
 ### Import to project
 
-_Soon_
+Import it like any other library, check [build.gradle.kts of Sample project](./sample/build.gradle.kts)
+
+```kotlin
+    implementation("com.sadvakassov:vlur:0.2.4")
+```
+
+### Example of usage 
+
+Check [Sample project](./sample/src/main/java/com/sadvakassov/vlur/sample/MainView.kt)
+
+```kotlin
+    // Define vulkan state that is similar to pool holder and pass it to modifier
+    val vulkanState = rememberVulkanState()
+
+    Image(
+        painter = painterResource(id = R.drawable.sample_2),
+        modifier = Modifier
+            .align(Alignment.CenterHorizontally)
+            .padding(vertical = 8.dp)
+            // LOOK HERE. Apply modifier and pass vulkanState and blurIntensity value
+            .vlur( 
+                vulkanState = vulkanState,
+                blurRadius = rescale(blurIntensity, 1.0, 25.0).toFloat(),
+            ),
+        contentDescription = null
+    )
+```
 
 ### Known issues
 
 - It doesn't run on emulator
-- ...
-
-_Soon_
+- I've tested in only on Samsung devices S23, A53, A54
 
 ## Links
 
+My inspiration come from the official renderscript page
 - https://github.com/android/renderscript-samples
 
 ## License
