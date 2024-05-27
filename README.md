@@ -57,8 +57,10 @@ Check [Sample project](./sample/src/main/java/com/sadvakassov/vlur/sample/MainVi
 
 ## Links
 
-My inspiration come from the official renderscript page
+My inspiration come from the official renderscript page:
 - https://github.com/android/renderscript-samples
+Related articles:
+- https://medium.com/@iRYO400/how-to-upload-your-android-library-to-maven-central-central-portal-in-2024-af7348742247
 
 ## License
 
