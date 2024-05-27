@@ -24,6 +24,11 @@ Import it like any other library, check [build.gradle.kts of Sample project](./s
 
 ## Example of usage 
 
+The C++ sources must be instantiated first, so you have to call `System.loadLibrary()`.
+make it sustainable, call [Initializer.instantiate()](./vlur/src/main/java/com/sadvakassov/vlur/Initializer.kt),
+e.g. check [MainActivity#17](./sample/src/main/java/com/sadvakassov/vlur/sample/MainActivity.kt).
+Or call by yourself `System.loadLibrary("vlur")`
+
 Check [Sample project](./sample/src/main/java/com/sadvakassov/vlur/sample/MainView.kt)
 
 ```kotlin
